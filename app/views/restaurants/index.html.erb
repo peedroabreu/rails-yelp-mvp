@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="container mt-4">
+  <h1 class="text-center mb-4">Restaurants</h1>
+  <button class="btn btn-seconday"><%= link_to "Add new Restaurant", new_restaurant_path %> </button>
+
+  <div class="row g-4">
+    <% @restaurants.each do |restaurant| %>
+      <div class="col-md-3">
+        <%= render restaurant %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="card h-100 shadow-sm">
+  <div class="card-body">
+    <h5 class="card-title"><%= restaurant.name %></h5>
+    <p class="card-text">
+      <strong>Address:</strong> <%= restaurant.address %>
+    </p>
+    <p class="card-text">
+      <strong>Category:</strong> <%= restaurant.category.capitalize %>
+    </p>
+    <p class="card-text">
+      <strong>Phone Number:</strong> <%= restaurant.phone_number %>
+    </p>
+    <%= link_to "view this restaurant", restaurant_path(restaurant) %>
+  </div>
+
+</div>
